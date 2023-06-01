@@ -1,0 +1,39 @@
+{
+    "terminal.integrated.inheritEnv": false,
+    "editor.rulers": [81, 121],
+    "editor.formatOnSave": true,
+    "python.formatting.provider": "black",
+    "python.linting.flake8Enabled": true,
+    "python.sortImports.args": [
+        "--profile",
+        "black"
+    ],
+    "[python]": {
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": true
+        }
+    },
+    "autoDocstring.customTemplatePath": "google.mustache",
+    "pythonTestExplorer.testFramework": "pytest",
+    "githubIssues.queries": [
+        {
+            "label": "My Pressing Issues",
+            "query": "state:open repo:${owner}/${repository} assignee:${user} label:P0"
+        },
+        {
+            "label": "My Issues",
+            "query": "state:open repo:${owner}/${repository} assignee:${user} -label:P0"
+        },
+        {
+            "label": "Other Pressing Issues",
+            "query": "state:open repo:${owner}/${repository} -assignee:${user} label:P0"
+        },
+        {
+            "label": "Other Open Issues",
+            "query": "state:open repo:${owner}/${repository} -assignee:${user} -label:P0"
+        }
+    ],
+    "githubIssues.issueBranchTitle": "feature/${issueNumber}-${sanitizedIssueTitle}",
+    "githubIssues.useBranchForIssues": "prompt",
+    "githubPullRequests.defaultMergeMethod": "squash"
+}

@@ -1,0 +1,17 @@
+black
+flake8
+pytest
+mypy
+docformatter
+pre-commit
+pydocstyle>=6.1.1
+pandas
+numpy
+scikit-learn
+transformers==4.28.0
+datasets
+evaluate
+torch 
+accelerate
+torchvision
+
